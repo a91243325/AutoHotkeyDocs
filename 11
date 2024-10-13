@@ -1,0 +1,38 @@
+#Persistent  ; 스크립트를 종료할 때까지 계속 실행
+SetKeyDelay, 0, 500  ; 0.5초 간격으로 키를 눌렀다 떼기
+
+; D (오른쪽)로 2초 동안 이동
+Loop, 4  ; 0.5초마다 4번 반복 (2초)
+{
+    Send, {D down}
+    Sleep, 500
+    Send, {D up}
+    Sleep, 500
+}
+
+; S (아래)로 5초 동안 이동
+Loop, 10  ; 0.5초마다 10번 반복 (5초)
+{
+    Send, {S down}
+    Sleep, 500
+    Send, {S up}
+    Sleep, 500
+}
+
+; A (왼쪽)로 2초 동안 이동
+Loop, 4  ; 0.5초마다 4번 반복 (2초)
+{
+    Send, {A down}
+    Sleep, 500
+    Send, {A up}
+    Sleep, 500
+}
+
+; W (위)로 5초 동안 이동
+Loop, 10  ; 0.5초마다 10번 반복 (5초)
+{
+    Send, {W down}
+    Sleep, 500
+    Send, {W up}
+    Sleep, 500
+}
